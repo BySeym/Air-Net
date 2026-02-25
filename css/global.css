@@ -1,0 +1,115 @@
+/* ================================================
+   GLOBAL.CSS — Variables, Reset, Utilitaires
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --noir:        #080808;
+  --noir-2:      #111111;
+  --noir-3:      #1a1a1a;
+  --noir-carte:  #141414;
+  --jaune:       #d4ff00;
+  --jaune-hover: #c2eb00;
+  --jaune-pale:  rgba(212, 255, 0, 0.08);
+  --jaune-glow:  rgba(212, 255, 0, 0.28);
+  --blanc:       #ffffff;
+  --gris:        #888888;
+  --gris-clair:  #cccccc;
+  --bordure:     rgba(255, 255, 255, 0.07);
+
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --radius:    4px;
+  --radius-lg: 14px;
+  --transition:      0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-w: 1280px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--noir);
+  color: var(--blanc);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--jaune); color: var(--noir); }
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; font-family: var(--font-body); border: none; background: none; }
+ul { list-style: none; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--noir); }
+::-webkit-scrollbar-thumb { background: var(--jaune); border-radius: 3px; }
+
+/* ── Container ── */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 clamp(1.5rem, 5vw, 5rem);
+}
+
+/* ── Section padding ── */
+.section {
+  padding: clamp(5rem, 10vw, 9rem) 0;
+}
+
+/* ── Tag label ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--jaune);
+  margin-bottom: 1.2rem;
+}
+.tag::before {
+  content: '';
+  width: 20px; height: 1px;
+  background: var(--jaune);
+}
+
+/* ── Accent ── */
+.accent { color: var(--jaune); }
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes blobPulse {
+  from { transform: scale(1); opacity: .6; }
+  to   { transform: scale(1.12); opacity: 1; }
+}
+@keyframes rotateSpin {
+  from { transform: rotate(0deg); } to { transform: rotate(360deg); }
+}
+
+/* ── Reveal on scroll ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

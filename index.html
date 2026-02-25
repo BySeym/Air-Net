@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VERDECO — Services premium d'entretien de vitres, création et soin de jardins, aménagement végétal intérieur. Devis gratuit sous 24h." />
+  <title>Air&Net</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- CSS — un fichier par section -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/realisations.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/toast.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<header class="navbar" id="top">
+  <a href="#top" class="nav-logo">
+    <div class="nav-logo__icon"><img src="img\airnet_logo_transparent.png" alt=""> </div>
+    <div class="nav-logo__text">Air<span>&</span><span>Net</span></div>
+  </a>
+
+  <nav class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">À propos</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="#contact" class="nav-cta">Devis gratuit</a>
+
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Menu mobile -->
+<nav class="nav-mobile" id="nav-mobile">
+  <a href="#services">Services</a>
+  <a href="#about">À propos</a>
+  <a href="#realisations">Réalisations</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="nav-cta">Devis gratuit</a>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section class="hero" id="accueil">
+  <div class="hero__bg">
+    <div class="hero__grid"></div>
+    <div class="hero__blob"></div>
+    <div class="hero__line"></div>
+  </div>
+
+  <div class="hero__badge" aria-hidden="true">
+    <div class="hero__badge-text">Rapide<br/>& Pro<br/>★ ★ ★</div>
+  </div>
+
+  <div class="container hero__content">
+    <div class="tag hero__tag">Services d'entretien</div>
+
+    <h1 class="hero__title">
+      <span>L'expertise</span>
+      <span class="line-accent">qui fait</span>
+      <span class="line-outline">la différence</span>
+    </h1>
+
+    <div class="hero__bottom">
+      <p class="hero__desc">
+Entretien de vitres, entretien de jardins, aménagement intérieur.
+Création artistique de fontaines sur mesure.
+Des prestations professionnelles pour valoriser vos espaces.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn-primary">
+          Devis gratuit <span class="arrow">→</span>
+        </a>
+        <a href="#services" class="btn-ghost">Nos services ↓</a>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div>
+        <div class="stat__number"><span data-count="20" data-suffix="+">0+</span></div>
+        <div class="stat__label">Ans d'expérience</div>
+      </div>
+      <div>
+        <div class="stat__number"><span data-count="150" data-suffix="+">0+</span></div>
+        <div class="stat__label">Projets</div>
+      </div>
+      <div>
+        <div class="stat__number"><span data-count="100" data-suffix="%">0%</span></div>
+        <div class="stat__label">Professionnel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════ -->
+<section class="services section" id="services">
+  <div class="container">
+
+    <div class="services__header reveal">
+      <div>
+        <div class="tag">Ce que nous faisons</div>
+        <h2 class="services__title">
+          Des services<br /><span class="accent">d'exception</span>
+        </h2>
+      </div>
+      <p class="services__subtitle">
+        Chaque prestation est réalisée avec soin et précision, par des professionnels passionnés par leur métier.
+      </p>
+    </div>
+
+    <div class="services__grid reveal">
+
+      <!-- Carte 1 -->
+      <article class="service-card">
+        <span class="service-card__num" aria-hidden="true">01</span>
+        <div class="service-card__icon">🪟</div>
+        <h3 class="service-card__title">Nettoyage de vitres & Terrasse</h3>
+        <p class="service-card__desc">
+          Intervention professionnelle pour des vitres & Terasse impeccables, intérieur comme extérieur.
+        </p>
+        <ul class="service-card__list">
+          <li>Vitres & baies vitrées</li>
+          <li>Vérandas & Terasse</li>
+          <li>Locaux professionnels</li>
+        </ul>
+        <a href="#contact" class="service-card__link">En savoir plus →</a>
+      </article>
+
+      <!-- Carte 2 -->
+      <article class="service-card">
+        <span class="service-card__num" aria-hidden="true">02</span>
+        <div class="service-card__icon">🌿</div>
+        <h3 class="service-card__title">Entretien de jardin</h3>
+        <p class="service-card__desc">
+          Tonte, taille, désherbage, ramassage de feuilles — votre jardin toujours soigné, toutes les saisons.
+        </p>
+        <ul class="service-card__list">
+          <li>Tonte </li>
+          <li>Taille de haies & arbustes</li>
+          <li>Désherbage & débroussaillage</li>
+          <li>Ramassage des feuilles</li>
+        </ul>
+        <a href="#contact" class="service-card__link">En savoir plus →</a>
+      </article>
+
+      <!-- Carte 3 -->
+      <article class="service-card">
+        <span class="service-card__num" aria-hidden="true">03</span>
+        <div class="service-card__icon">👨🏽‍🎨</div>
+        <h3 class="service-card__title">Création</h3>
+        <p class="service-card__desc">
+          De la conception à la réalisation, nous créons des espaces verts & intérieur sur mesure, esthétiques et durables.
+        </p>
+        <ul class="service-card__list">
+          <li>Étude & plan paysager</li>
+          <li>Plantation</li>
+          <li>Création de fontaine</li>
+          <li>Création de cabane</li>
+        </ul>
+        <a href="#contact" class="service-card__link">En savoir plus →</a>
+      </article>
+
+      <!-- Carte 4 -->
+      <article class="service-card">
+        <span class="service-card__num" aria-hidden="true">04</span>
+        <div class="service-card__icon">🏡</div>
+        <h3 class="service-card__title">Aménagement intérieur</h3>
+        <p class="service-card__desc">
+         Pose de résine intérieure pour des surfaces modernes, durables et esthétiques
+        </p>
+        <ul class="service-card__list">
+         <li>Pose de résine pour sols</li>
+<li>Résine décorative intérieure</li>
+<li>Revêtements modernes et résistants</li>
+<li>Rénovation de surfaces</li>
+        </ul>
+        <a href="#contact" class="service-card__link">En savoir plus →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════ -->
+<section class="about section" id="about">
+  <div class="container about__inner">
+
+    <!-- Visuel -->
+    <div class="about__visual reveal">
+      <div class="about__frame">
+      <img src="img\déco-jardin.jpg" alt="image d'un jardin">
+        <div class="about__frame-overlay"></div>
+      </div>
+      <div class="about__counter">
+        <div class="about__counter-num">20+</div>
+        <div class="about__counter-label">Années d'expertise</div>
+      </div>
+    </div>
+
+    <!-- Texte -->
+    <div class="about__text-col reveal">
+      <div class="tag">À propos de nous</div>
+      <h2 class="about__title">
+        Passion du détail,<br /><span class="accent">excellence du résultat</span>
+      </h2>
+      <p class="about__text">
+     Forts de plus de 20 ans d’expérience, Air&Net est spécialisée dans l’entretien et la création d’espaces verts, le nettoyage de vitres et l’aménagement intérieur.
+Un savoir-faire au service de vos espaces.
+      </p>
+      <p class="about__text">
+        Notre équipe de professionnels passionnés intervient chez les particuliers comme chez les
+        professionnels, avec un seul objectif : vous offrir un cadre de vie sain, beau et durable.
+      </p>
+
+      <div class="about__values">
+        <div class="about__value">
+          <span class="about__value-icon">✦</span>
+          <div>
+            <div class="about__value-title">Qualité</div>
+            <div class="about__value-desc">Équipements professionnels et produits adaptés pour un travail de qualité.</div>
+          </div>
+        </div>
+        <div class="about__value">
+          <span class="about__value-icon">🌱</span>
+          <div>
+            <div class="about__value-title">Éco-responsable</div>
+            <div class="about__value-desc">Produits naturels et méthodes respectueuses de l’environnement et de votre santé, dans la mesure du possible selon le projet et son ampleur.</div>
+          </div>
+        </div>
+        <div class="about__value">
+          <span class="about__value-icon">🕐</span>
+          <div>
+            <div class="about__value-title">Ponctualité garantie</div>
+            <div class="about__value-desc">Interventions planifiées, ponctuelles et réalisées dans les délais convenus.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     RÉALISATIONS
+════════════════════════════════════════════════ -->
+<section class="realisations section" id="realisations">
+  <div class="container">
+
+    <div class="realisations__header reveal">
+      <div class="tag">Portfolio</div>
+      <h2 class="realisations__title">
+        Nos <span class="accent">réalisations</span>
+      </h2>
+    </div>
+
+    <div class="realisations__grid reveal">
+
+      <article class="real-card real-card--large">
+        <div class="real-card__bg">🌳</div>
+        <div class="real-card__overlay"></div>
+        <span class="real-card__badge">Résidentiel</span>
+        <div class="real-card__info">
+          <div class="real-card__cat">Création de jardin</div>
+          <div class="real-card__title">Jardin contemporain — Villa Dupont</div>
+        </div>
+      </article>
+
+      <article class="real-card">
+        <div class="real-card__bg">🪟</div>
+        <div class="real-card__overlay"></div>
+        <span class="real-card__badge">Professionnel</span>
+        <div class="real-card__info">
+          <div class="real-card__cat">Vitres</div>
+          <div class="real-card__title">Nettoyage façade vitrée</div>
+        </div>
+      </article>
+
+      <article class="real-card">
+        <div class="real-card__bg"><img src="img\déco-jardin.jpg" alt=""></div>
+        <div class="real-card__overlay"></div>
+        <span class="real-card__badge">Jardin</span>
+        <div class="real-card__info">
+          <div class="real-card__cat">Création</div>
+          <div class="real-card__title">Création jardin avec fontaine</div>
+        </div>
+      </article>
+
+      <article class="real-card">
+        <div class="real-card__bg"><img src="img\interieur.jpg" alt=""></div>
+        <div class="real-card__overlay"></div>
+        <span class="real-card__badge">Intérieur</span>
+        <div class="real-card__info">
+          <div class="real-card__cat">Aménagement</div>
+          <div class="real-card__title">Aménagement intérieur : pose de carrelage au sol</div>
+        </div>
+      </article>
+
+      <article class="real-card">
+        <div class="real-card__bg">✂️</div>
+        <div class="real-card__overlay"></div>
+        <span class="real-card__badge">Entretien</span>
+        <div class="real-card__info">
+          <div class="real-card__cat">Entretien jardin</div>
+          <div class="real-card__title">Haies & taille douce</div>
+        </div>
+      </article>
+
+      <article class="real-card">
+        <div class="real-card__bg"><img src="img\cabanee.png" alt=""></div>
+        <div class="real-card__overlay"></div>
+        <span class="real-card__badge">Cabane</span>
+        <div class="real-card__info">
+          <div class="real-card__cat">Aménagement extérieur</div>
+          <div class="real-card__title">Création d'une cabane dans le jardin</div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="realisations__cta reveal">
+      <a href="#contact">Parlez-nous de votre projet →</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section class="contact section" id="contact">
+  <div class="container contact__inner">
+
+    <!-- Infos -->
+    <div class="contact__info reveal">
+      <div class="tag">Nous contacter</div>
+      <h2 class="contact__title">
+        Parlons de<br /><span class="accent">votre projet</span>
+      </h2>
+      <p class="contact__desc">
+        Devis gratuit sous 24h. Remplissez le formulaire et nous vous recontactons rapidement pour étudier ensemble vos besoins.
+      </p>
+
+      <div class="contact__details">
+        <div class="contact__detail">
+          <div class="contact__detail-icon">📞</div>
+          <div><strong>Téléphone</strong>06 26 47 13 45</div>
+        </div>
+        <div class="contact__detail">
+          <div class="contact__detail-icon">📍</div>
+          <div><strong>Zone d'intervention</strong>Région Lilloise & Nord Pas-De-Calais</div>
+        </div>
+        <div class="contact__detail">
+          <div class="contact__detail-icon">🕐</div>
+          <div><strong>Disponibilités</strong>Lun — Ven · 9h à 18h</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="contact__form-box reveal">
+      <div class="contact__form-content">
+        <div class="form-title">Demande de devis gratuit</div>
+
+        <form id="contact-form" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-prenom">Prénom</label>
+              <input type="text" id="f-prenom" name="prenom" placeholder="Jean" required />
+              <span class="form-error-msg">Ce champ est requis</span>
+            </div>
+            <div class="form-group">
+              <label for="f-nom">Nom</label>
+              <input type="text" id="f-nom" name="nom" placeholder="Dupont" required />
+              <span class="form-error-msg">Ce champ est requis</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" placeholder="jean@email.fr" required />
+              <span class="form-error-msg">Ce champ est requis</span>
+            </div>
+            <div class="form-group">
+              <label for="f-tel">Téléphone</label>
+              <input type="tel" id="f-tel" name="telephone" placeholder="06 00 00 00 00" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f-service">Service souhaité</label>
+            <select id="f-service" name="service" required>
+              <option value="" disabled selected>Sélectionnez un service…</option>
+              <option>Nettoyage de vitres</option>
+              <option>Entretien de jardin</option>
+              <option>Création de jardin</option>
+              <option>Aménagement intérieur</option>
+              <option>Plusieurs prestations</option>
+            </select>
+            <span class="form-error-msg">Veuillez choisir un service</span>
+          </div>
+
+          <div class="form-group">
+            <label for="f-message">Votre message</label>
+            <textarea id="f-message" name="message" placeholder="Décrivez votre projet, la superficie, vos contraintes…" required></textarea>
+            <span class="form-error-msg">Ce champ est requis</span>
+          </div>
+
+          <button type="submit" class="form-submit" id="form-submit">
+            Envoyer ma demande <span>→</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Message de succès -->
+      <div class="form-success">
+        <div class="form-success__icon">✅</div>
+        <div class="form-success__title">Merci <span></span>&nbsp;!</div>
+        <p class="form-success__text">
+          Votre demande a bien été envoyée. Nous vous recontactons sous 24h pour vous proposer un devis personnalisé.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__top">
+
+    <!-- Marque -->
+    <div class="footer__brand">
+      <a href="#top" class="footer__logo">
+        <div class="footer__logo-icon"> <img src="img\airnet_logo_transparent.png" alt=""> </div>
+        Air<span>&Net</span>
+      </a>
+      <p class="footer__tagline">
+        Services d'entretien de vitres, de jardins et d'espaces verts.
+        Qualité, fiabilité et passion à votre service.
+      </p>
+      <!-- <div class="footer__social">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div> -->
+    </div>
+
+    <!-- Services -->
+    <div class="footer__col">
+      <div class="footer__col-title">Services</div>
+      <ul>
+        <li><a href="#services">Nettoyage de vitres</a></li>
+        <li><a href="#services">Entretien jardin</a></li>
+        <li><a href="#services">Création jardin</a></li>
+        <li><a href="#services">Aménagement intérieur</a></li>
+      </ul>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer__col">
+      <div class="footer__col-title">Navigation</div>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer__col">
+      <div class="footer__col-title">Contact</div>
+      <ul>
+        <li><a href="tel:06 26 47 13 45">06 26 47 13 45</a></li>
+        <li><a href="#contact">Devis gratuit</a></li>
+        <li><a href="#contact">Zone d'intervention</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <p class="footer__copy">© <script>document.write(new Date().getFullYear())</script> <span>Air&Net</span> — Tous droits réservés</p>
+    <div class="footer__quality"><span>★★★★★</span> Service 5 étoiles</div>
+    <nav class="footer__legal">
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGV</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="alert" aria-live="polite">
+  <div class="toast__avatar">✦</div>
+  <div class="toast__body">
+    <div class="toast__label">Restons connectés 🤖</div>
+    <div class="toast__text">
+      Site conçu par <strong>Byseym</strong>
+    </div>
+    <a href="https://www.instagram.com/byseym" target="_blank" rel="noopener" class="toast__btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="ig-grad" cx="30%" cy="107%" r="150%">
+            <stop offset="0%" stop-color="#fdf497"/>
+            <stop offset="5%" stop-color="#fdf497"/>
+            <stop offset="45%" stop-color="#fd5949"/>
+            <stop offset="60%" stop-color="#d6249f"/>
+            <stop offset="90%" stop-color="#285AEB"/>
+          </radialGradient>
+        </defs>
+        <path fill="url(#ig-grad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      Suivre sur Instagram
+    </a>
+  </div>
+  <button class="toast__close" id="toast-close" aria-label="Fermer">✕</button>
+  <div class="toast__progress" id="toast-progress"></div>
+</div>
+
+
+<!-- JS -->
+<script src="js/main.js"></script>
+</body>
+</html>

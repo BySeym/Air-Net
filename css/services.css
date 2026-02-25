@@ -1,0 +1,143 @@
+/* ================================================
+   SERVICES.CSS
+   ================================================ */
+
+.services { background: var(--noir); }
+
+.services__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.services__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: 1.08;
+}
+
+.services__subtitle {
+  max-width: 340px;
+  color: var(--gris);
+  font-size: .92rem;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* Grille */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5px;
+  background: var(--bordure);
+  border: 1px solid var(--bordure);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+/* Carte */
+.service-card {
+  background: var(--noir-carte);
+  padding: clamp(2rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  position: relative;
+  overflow: hidden;
+  transition: background var(--transition);
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--jaune);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
+}
+.service-card:hover { background: var(--noir-3); }
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-card__num {
+  position: absolute;
+  top: 1.5rem; right: 2rem;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(255,255,255,.03);
+  line-height: 1;
+  pointer-events: none;
+  transition: color var(--transition);
+}
+.service-card:hover .service-card__num { color: rgba(212,255,0,.05); }
+
+.service-card__icon {
+  width: 54px; height: 54px;
+  background: var(--jaune-pale);
+  border: 1px solid rgba(212,255,0,.14);
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem;
+  transition: transform var(--transition), background var(--transition);
+}
+.service-card:hover .service-card__icon {
+  transform: scale(1.06);
+  background: rgba(212,255,0,.14);
+}
+
+.service-card__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.service-card__desc {
+  color: var(--gris);
+  font-size: .88rem;
+  line-height: 1.7;
+  font-weight: 300;
+  flex: 1;
+}
+
+.service-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.service-card__list li {
+  font-size: .8rem;
+  color: var(--gris-clair);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.service-card__list li::before {
+  content: '▸';
+  color: var(--jaune);
+  font-size: .62rem;
+}
+
+.service-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--jaune);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-top: .4rem;
+  transition: gap var(--transition);
+}
+.service-card__link:hover { gap: .7rem; }
+
+@media (max-width: 600px) {
+  .services__grid { grid-template-columns: 1fr; }
+}
