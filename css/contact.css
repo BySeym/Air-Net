@@ -13,6 +13,7 @@
   bottom: -2rem; right: -1rem;
   font-family: var(--font-display);
   font-size: clamp(5rem, 14vw, 15rem);
+  font-size: 26vh;
   font-weight: 800;
   color: rgba(255,255,255,.015);
   white-space: nowrap;
