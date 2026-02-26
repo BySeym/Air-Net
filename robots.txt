@@ -1,8 +1,4 @@
 # robots.txt — Air&Net
-# Autorise tous les moteurs de recherche
-
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://www.verdeco.fr/sitemap.xml
+Sitemap: https://www.airnet-services.fr/sitemap.xml
