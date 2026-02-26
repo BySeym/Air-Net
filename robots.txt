@@ -1,4 +1,4 @@
 # robots.txt — Air&Net
 User-agent: *
 Allow: /
-Sitemap: https://www.airnet-services.fr/sitemap.xml
+Sitemap: https://air-net.netlify.app/sitemap.xml
